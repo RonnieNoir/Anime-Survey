@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Survey</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header>
+        <h1>Anime Poll</h1>
+        <h3>Thank you for your honest input</h3>
+    </header>
+    <div class="overlay">
+        <form action="#">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                    <input type="text" placeholder="Enter in your name" id="name" class="form-box">
+            </div>
+           
+            <div class="form-group">
+                <label for="email">Email</label>
+                    <input type="email" placeholder="Enter Your Email" id="enail" class="form-box">
+            </div>
+          
+            <div class="form-group">
+                <label for="age">Age (optional)</label>
+                    <input type="number" id="age" name="age" min="18" max="99" placeholder="Age" class="form-box">
+            </div>
+
+            <div class="form-group">
+                <label for="Preference">What gener do you like?</label>
+                    <select name="genres" id="genres" class="form-box">
+                        <option diabled selected value>Select your favorite genre</option>
+                        <option value="shonen">Shonen</option>
+                        <option value="slice_of_life">Slice Of Life</option>
+                        <option value="mecha">Mecha</option>
+                        <option value="harem">Harem</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="sports">Sports</option>
+                        <option value="other">other</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <label for="time">When did you get into anime?</label>
+                   
+                    <label> <input type="radio" id="80's" name="year" value="80's" class="input-year">1980-1989</label>
+                    
+                    <label> <input type="radio" id="90's" name="year" value="90's" class="input-year">1990-1999</label>
+                    
+                    <label> <input type="radio" id="00's" name="year" value="00's" class="input-year">2000-2009</label>
+                    
+                    <label> <input type="radio" id="10's" name="year" value="10's" class="input-year">2010-2020</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="seen">What animes have you watched?</label>
+                    
+                    <label><input type="checkbox" id="naruto" name="show" value="naruto" class="input-show">Naruto</label>
+                    
+                    <label><input type="checkbox" id="dbz" name="show" value="dbz" class="input-show">Dragon Ball Z</label>
+                    
+                    <label><input type="checkbox" id="hitman" name="show" value="hitman" class="input-show">Hitman Reborn</label>
+                    
+                    <label><input type="checkbox" id="kenichi" name="show" value="kenichi" class="input-show">Kenichi: The Mightiest Desciple</label>
+                   
+                    <label><input type="checkbox" id="darling" name="show" value="darling" class="input-show">Darling in the Franxx</label>
+                    
+                    <label><input type="checkbox" id="dxd" name="show" value="dxd" class="input-show">High School DxD</label>
+                    
+                    <label><input type="checkbox" id="gintama" name="show" value="gintama" class="input-show">Gintama</label>
+                    
+                    <label><input type="checkbox" id="no_game" name="show" value="no_game" class="input-show"> No Game No Life</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="suggestions">Any comments or suggestions?</label>
+                    <textarea name="comments" id="comments" placeholder="Enter your comments or suggestions here..."></textarea>
+            </div>
+
+            <button type="submit" id="submit" class="submit-btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
